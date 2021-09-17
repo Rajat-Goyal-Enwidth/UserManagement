@@ -25,6 +25,11 @@ public class UserController {
 	@Autowired
 	UserService userService;
 
+	@GetMapping()
+	public String hi()
+	{
+		return "Hii";
+	}
 	@GetMapping("/userlogin")
 	public String userLogin() {
 		
